@@ -12,5 +12,5 @@ Enjoy :)
 Installation
 ------------
 
-You can install this plugin via (http://github.com/tpope/vim-pathogen/)[pathogen] or (https://github.com/gmarik/vundle)[Vundle].
+You can install this plugin via [pathogen](http://github.com/tpope/vim-pathogen/) or [Vundle](https://github.com/gmarik/vundle).
 Also, you can just copy vim-project.vim file to ~/.vim/plugin/ directory.
