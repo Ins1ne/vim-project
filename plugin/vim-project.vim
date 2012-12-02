@@ -6,16 +6,13 @@
 "                  - http://vim.wikia.com/wiki/Restore_state_of_edited_files_when_reopened
 " Author:      Aider Ibragimov <aider.ibragimov@gmail.com>
 " URL:         https://github.com/Ins1ne/vim-project.git
-" Version:     0.0.1
+" Version:     0.0.2
 "=============================================================================
 
 " Create folder .vim in current working directory
 function! CreateVimProjectFolder()
     if (!isdirectory(".vim"))
         call mkdir(".vim")
-
-        " create directory for undofiles
-        call mkdir(".vim/undodir")
     endif
 endfunction
 
@@ -40,8 +37,6 @@ function! RestoreProject()
     if argc() == 0 && filereadable(".vim/viminfo.vim")
         execute "rviminfo .vim/viminfo.vim"
     endif
-
-    execute "set undodir=.vim/undodir"
 endfunction
 
 " Allow to map another key
